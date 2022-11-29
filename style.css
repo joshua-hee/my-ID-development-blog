@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.heading {
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    height: 100px;
+    width: 100%;
+}
+
+.heading h1, h3 {
+    color: white;
+}
+
+/* tinted background */
+.banner img {
+	filter: brightness(50%);
+	height: 450px;
+	width: 100%;
+}
+
+.banner {
+	position: relative;
+	text-align: center;
+  	color: white;
+}
+
+.bannerContent {
+	position: absolute;
+ 	top: 15%;
+  	left: 50%;
+	transform: translate(-50%, 50%);
+	font-size: 50px;
+}
+
+.mainContent {
+    margin: 50px 100px;
+}
+
+.contentHeader {
+    text-decoration: underline;
+}
