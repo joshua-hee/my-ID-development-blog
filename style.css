@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Bebas Neue', cursive;
 }
 
 .heading {
@@ -36,15 +39,77 @@ body {
 	font-size: 50px;
 }
 
-.mainContent {
-    margin: 50px 100px;
+/* ---------- Navigation Section ---------- */
+.dropdown {
+	text-align: center;
+}
+
+/* Dropdown button */
+.dropdown .drop-btn {
+	font-size: 30px;
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+	cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+@keyframes dropdownFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes dropdownFadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.dropdown-content {
+	width: 100%;
+  	padding: 50px 0;
+  	text-align: center;
+  	background-color: lightblue;
+  	margin-top: 20px;
+	animation-fill-mode: both;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+
+/* ---------- Introduction Section ---------- */
+.introSection {
+	text-align: center;
+	margin: 50px 100px;
+}
+
+.introHeader {
+	text-decoration: underline;
 }
 
 .contentHeader {
     text-decoration: underline;
 }
 
+.mainContent {
+    margin: 50px 100px;
+}
+
 table, th, td {
 	border: 2px solid black;
 	width: 100%;
   }
+
+td {
+	text-align: center;
+	padding: 10px 20px;
+}
