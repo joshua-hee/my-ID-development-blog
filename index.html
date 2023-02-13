@@ -5,25 +5,63 @@
         <meta name="viewport" content="width=device-width">
         <title>ID Development Blog</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     </head>
 
     <body>
+        <!-- Header Section -->
         <header>
             <div class="heading">
-                <h1>Interactive Development Blog</h1>
+                <h1>Developmental Blog</h1>
                 <h3>By Joshua Hee</h3>
             </div>
             <div class="banner">
-                <img src="/img/introductionImg.jpg" alt="#">
+                <img src="img/introductionImg.jpg" alt="#">
 		        <h1 class="bannerContent">My Interactive Development Module Experience</h1>
             </div>
         </header>
 
+        <!-- Navigation Section -->
+        <div class="overviewSection">
+            <div class="dropdown">
+                <button class="drop-btn" onclick="dropdownToggle()">
+                    Overview
+                    <span class="arrow-icon">
+                        <i class="fas fa-caret-up"></i>
+                    </span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                    <a href="#">Link 6</a>
+                    <a href="#">Link 7</a>
+                    <a href="#">Link 8</a>
+                    <a href="#">Link 9</a>
+                    <a href="#">Link 10</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="introSection">
+            <h2 class="introHeader">Introduction</h2>
+            <p>
+                Welcome to my developmental blog! I am Josh, and the objective of this blog of mine is to share
+                with you all about the cool and interesting stuff I have learnt from this exciting module, called
+                Interactive Development. I would be covering each week, from week 1 to 18, about the things I have
+                learnt and the knowledge I have gained over the weeks.
+            </p>
+        </div>
+        
+        <!-- Content Section -->
         <div class="mainContent">
             <h2 class="contentHeader">Contents</h2>
             <ol>
                 <li>A Brief Idea About What Web Development Is</li>
-                <li>A Brief Idea About What Web Development Is</li>
+                <li>The Roles of a Web Developer</li>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -71,5 +109,7 @@
                 </tr>
             </table>
         </div>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
