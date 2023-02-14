@@ -22,92 +22,289 @@
         </header>
 
         <!-- Navigation Section -->
-        <div class="overviewSection">
-            <div class="dropdown">
-                <button class="drop-btn" onclick="dropdownToggle()">
-                    Overview
-                    <span class="arrow-icon">
-                        <i class="fas fa-caret-up"></i>
-                    </span>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 4</a>
-                    <a href="#">Link 5</a>
-                    <a href="#">Link 6</a>
-                    <a href="#">Link 7</a>
-                    <a href="#">Link 8</a>
-                    <a href="#">Link 9</a>
-                    <a href="#">Link 10</a>
+        <section id="overviewSection">
+            <div class="overviewNav">
+                <div class="dropdown">
+                    <button class="drop-btn" onclick="dropdownToggle()">
+                        Overview
+                        <span class="arrow-icon">
+                            <i class="fas fa-caret-up"></i>
+                        </span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#week1">Week 1</a>
+                        <a href="#week2">Week 2</a>
+                        <a href="#week3">Week 3</a>
+                        <a href="#week4">Week 4</a>
+                        <a href="#week5">Week 5</a>
+                        <a href="#week6">Week 6</a>
+                        <a href="#week7">Week 7</a>
+                        <a href="#week8">Week 8</a>
+                        <a href="#week9">Week 9</a>
+                        <a href="#week10">Week 10</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
 
         <!-- Introduction Section -->
-        <div class="introSection">
-            <h2 class="introHeader">Introduction</h2>
-            <p>
-                Welcome to my developmental blog! I am Josh, and the objective of this blog of mine is to share
-                with you all about the cool and interesting stuff I have learnt from this exciting module, called
-                Interactive Development. I would be covering each week, from week 1 to 18, about the things I have
-                learnt and the knowledge I have gained over the weeks.
-            </p>
-        </div>
+        <section id="introSection">
+            <div class="introduction">
+                <h1 class="introHeader">Introduction</h1>
+                <p>
+                    Welcome to my developmental blog! I am Josh, and the objective of this blog of mine is to share
+                    with you all about the cool and interesting stuff I have learnt from this exciting module, called
+                    Interactive Development. I would be covering each week, from week 1 to 18, about the things I have
+                    learnt and the knowledge I have gained over the weeks.
+                </p>
+            </div>
+        </section>
         
         <!-- Content Section -->
         <div class="mainContent">
-            <h2 class="contentHeader">Contents</h2>
-            <ol>
-                <li>A Brief Idea About What Web Development Is</li>
-                <li>The Roles of a Web Developer</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
+            <!-- Week 1 -->
+            <section id="section1">
+                <h1 class="mainHeader" id="week1">Week 1</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>A Brief Idea About What Web Development Is</li>
+                    <li>The Roles of a Web Developer</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
 
-            <h2 class="contentHeader">A Brief Idea About What Web Development Is</h2>
-            <p>
-                I was given a brief idea about what web development is. To start off, web development
-                consists of 3 different roles of developers. Developers who specialize in the behaviour
-                and user interface of the site (front-end), those who write the underlying code for
-                running all website operations (back-end), and those who manage all aspects of a website
-                (full-stack). Web development involves the work of developing websites, where the web developers
-                would then publish it on the internet for users and others to view or interact with. While web
-                developers create its contents and design the websites, they are also responsible for maintaining
-                websites, as well as its technical detail, such as its performance, which are measures of a
-                website's loading speed and so on. Sites that have good performance typically have more user traffic
-                and increased conversion rates.
-            </p>
+                <h2 class="contentHeader">1. A Brief Idea About What Web Development Is</h2>
+                <p>
+                    During the first week, I was given a brief idea about what web development is. To start off, web development
+                    consists of 3 different roles of developers. Developers who specialize in the behaviour
+                    and user interface of the site (front-end), those who write the underlying code for
+                    running all website operations (back-end), and those who manage all aspects of a website
+                    (full-stack). Web development involves the work of developing websites, where the web developers
+                    would then publish it on the internet for users and others to view or interact with. While web
+                    developers create its contents and design the websites, they are also responsible for maintaining
+                    websites, as well as its technical detail, such as its performance, which are measures of a
+                    website's loading speed and so on. Sites that have good performance typically have more user traffic
+                    and increased conversion rates.
+                </p>
 
-            <h2 class="contentHeader">The Roles of a Web Developer</h2>
-            <p>
-                As mentioned earlier, web development is split into 3 categories. We will now go more into detail
-                of each role of the 3 different types of web developers.
-            </p>
-            <table>
-                <tr>
-                    <th>FRONTEND DEVELOPERS</th>
-                    <th>BAKCENED DEVELOPERS</th>
-                    <th>FULLSTACK DEVELOPERS</th>
-                </tr>
-                <tr>
-                    <td>Code and design the frontend of a website. This is the part which the users see and interact with.</td>
-                    <td>Working behind the scenes and maintaining the the performance and technology needed to power the front end.</td>
-                    <td>Experts in both frontend and backend development.</td>
-                </tr>
-                <tr>
-                    <td>Bring the designs to life with the use of HTML, CSS and JavaScript.</td>
-                    <td>Ensure that everything the frontend developer developed is properly functioning.</td>
-                    <td>Provide guidance on strategy and best practices.</td>
-                </tr>
-                <tr>
-                    <td>Ensure responsive design throughout different devices or platforms.</td>
-                    <td>Create and manage the databases.</td>
-                    <td>Well-versed in both business logic and user experience.</td>
-                </tr>
-            </table>
+                <h2 class="contentHeader">2. The Roles of a Web Developer</h2>
+                <p>
+                    As mentioned earlier, web development is split into 3 categories. We will now go more into detail
+                    of each role of the 3 different types of web developers.
+                </p>
+                <table>
+                    <tr>
+                        <th>FRONTEND DEVELOPERS</th>
+                        <th>BAKCENED DEVELOPERS</th>
+                        <th>FULLSTACK DEVELOPERS</th>
+                    </tr>
+                    <tr>
+                        <td>Code and design the frontend of a website. This is the part which the users see and interact with.</td>
+                        <td>Working behind the scenes and maintaining the the performance and technology needed to power the front end.</td>
+                        <td>Experts in both frontend and backend development.</td>
+                    </tr>
+                    <tr>
+                        <td>Bring the designs to life with the use of HTML, CSS and JavaScript.</td>
+                        <td>Ensure that everything the frontend developer developed is properly functioning.</td>
+                        <td>Provide guidance on strategy and best practices.</td>
+                    </tr>
+                    <tr>
+                        <td>Ensure responsive design throughout different devices or platforms.</td>
+                        <td>Create and manage the databases.</td>
+                        <td>Well-versed in both business logic and user experience.</td>
+                    </tr>
+                </table>
+
+                <h2 class="contentHeader">3. HTML</h2>
+                <p>
+                    HTML, along with CSS and Javascript, are the 3 core pillars of front frontend development.
+                    HTML stands for Hypertext Markup Language. It is basically a set tags which define the structure,
+                    and format of the web contents, and it utilizes tags and attributes to describe how the content of
+                    a web page should be displayed or formatted.
+                </p>
+
+                <h2 class="contentHeader">4. CSS</h2>
+                <p>
+                    CSS, which stands for Cascading Style Sheets, is a style sheet language used for beautifying the
+                    looks of a website. It allows users to add styles, such as colours, fonts, animations, layouts,
+                    and more, to web pages. Users are able to control the layout and presentation of multiple
+                    webpages at once, making it easier to maintain and update the design of their websites.
+                </p>
+
+                <h2 class="contentHeader">5. JavaScript</h2>
+                <p>
+                    JavaScript is a programming language used to enable websites to be interactive. Users can add dynamic
+                    behaviour, such as animated effects, and create complex features like forms, that can be submitted or
+                    used to store data. It can also be used to make a website respond to user interaction, like clicking a
+                    button or scrolling through the web page, allowing the user experience to be more engaging.
+                </p>
+            </section>
+
+            <!-- Week 2 -->
+            <section id="section2">
+                <h1 class="mainHeader" id="week2">Week 2</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>Semantic Web</li>
+                    <li>CSS Rule</li>
+                    <li>The Different Methods to Apply CSS</li>
+                    <li>The Different Ways to Apply Colours</li>
+                    <li>ID and Class Attributes</li>
+                    <li>Pseudo Classes</li>
+                    <li>Font Stacking</li>
+                    <li>Box Model</li>
+                    <li>Web Gradients</li>
+                </ol>
+
+                <h2 class="contentHeader">1. Semantic Web</h2>
+                <p>
+                    The Semantic Web concept is proposed to enhance way web content is shared and understood by machines.
+                    The idea is to create a web where the meaning and context of the content is fully captured and represented
+                    in machine-readable format, so that computers can process and understand the data efficiently.
+                    Some Examples include the div element. It does not inheritently represent anything. It should be used only
+                    when no ohter semantic element is appropriate.
+                </p>
+                <p>
+                    To summarize, semantics relates to syntax. It is the meaning
+                    behind words, phrases and so on. In this case, it is the HTML. Seach engines looks for keywords by looking
+                    through the semantics in our codes. Therefore, it is important to have Semantic HTML as it not only make the
+                    codes easier to understand, but also because screen readers (accessibility feature) and browsers can
+                    interpret Semantic HTML better, which makes it more accessible.
+                </p>
+
+                <h2 class="contentHeader">2. CSS Rule</h2>
+                <p>
+                    A CSS rule is a set of instructions that specify how HTML elements should be displayed on a web page. It
+                    defines the styles for font, colour, size, padding, margin, and other properties of an HTML element. The
+                    CSS rule consists of two parts. A selector, which defines the HTML element to be styled, and a declaration,
+                    which specifies the styles to be applied.
+                </p>
+
+                <h2 class="contentHeader">3. The Different Methods to Apply CSS</h2>
+                <p>
+                    There are 3 ways to apply CSS to a web page. Firstly, using external stylesheets. This method involves
+                    creating a seperate .css file which links it to the HTML document. This is the most commonly used
+                    (and preferred) method as it allows for easy maintenance and consistency throught the website.
+                </p>
+                <p>
+                    Internal stylesheets can also be used. This method involves adding CSS styles within the head of the HTML 
+                    document using a style tag. This method can be useful for small websites or quick testing of styles.
+                </p>
+                <p>
+                    Lastly, inline styles. This method involves adding CSS styles directly to HTML elements using the "style"
+                    attribute. However, this method is not recommended and should therefore be used sparingly as it goes against
+                    the seperation of structure and presenation.
+                </p>
+
+                <h2 class="contentHeader">4. The Different Ways to Apply Colours</h2>
+                <p>
+                    There are several ways to apply colours in CSS:
+                </p>
+                <p>- Named Colours: Using color names such as red, blue, green, etc. to specify colors.</p>
+                <p>- RGB Colours: Using the RGB value to specify colors, such as rgb(255,0,0) for red.</p>
+                <p>- HEX Colors: Using the hexadecimal value to specify colors, such as #FF0000 for red.</p>
+                <p>- HSL Colors: Using the HSL value to specify colors, such as hsl(0, 100%, 50%) for red.</p>
+                <p>- RGBA Colors: Using the RGBA value to specify colors, such as rgba(255,0,0,1) for red with full opacity.</p>
+                <p>- Gradients: Using CSS gradients to create a gradual transition between two or more colors.</p>
+                <p>- Transparent Colors: Using the transparent keyword to make an element transparent.</p>
+                <p>
+                    These color methods can be applied to different CSS properties such as background-color, color, border-color, etc. to change the appearance of an element.
+                </p>
+
+                <h2 class="contentHeader">5. ID and Class Attributes</h2>
+                <p>
+                    ID and Class attributes are used in HTML to identify specific elements and apply styles to them.
+                </p>
+                <p>
+                    The ID attribute is used to give a unique identity to a specific element. Only one element can have a
+                    particular ID on a page, and an ID can only be used once.
+                </p>
+                <p>
+                    The Class attribute, on the other hand, is used to group elements with similar styles. Unlike the ID attribute, a class can be applied to multiple elements
+                    on a page.
+                </p>
+                <p>
+                    In CSS, users can target elements with the ID attribute using the "#" symbol followed by the ID name, and target elements with the Class attribute using the "."
+                    symbol followed by the Class name
+                </p>
+                <p>In general, ID is used when users want to target a specific, unique element, while Class is used when users want to target multiple elements with the same style.</p>
+
+                <h2 class="contentHeader">6. Pseudo Classes</h2>
+                <p>
+                    Pseudo classes in CSS are special keywords that can be added to selectors to select elements based on their state or position in the document. They allow users to
+                    style an element in a specific way when it's in a certain state or condition.
+                </p>
+                <p>
+                    For example, the ":hover" pseudo class allows users to change the style of an element when the mouse pointer is over it. The ":active" pseudo class allows you to
+                    change the style of an element when it's being clicked. The ":focus" pseudo class allows you to change the style of an element when it has focus, such as when it is
+                    selected for typing.
+                </p>
+
+                <h2 class="contentHeader">7. Font Stacking</h2>
+                <p>
+                    Font stacking is a technique in web design where multiple font families are declared for the same element in a web page. It is done to ensure that if the first font
+                    family is not available on the user's device, the next font family in the list will be used as a fallback. The idea behind font stacking is to provide an appropriate
+                    and readable font for the content, even if the user's device does not have the preferred font installed.
+                </p>
+
+                <h2 class="contentHeader">8. Box Model</h2>
+                <p>
+                    The box model is a concept in CSS that describes the rectangular boxes that are generated for elements in the document tree and the boxes' dimensions, including their
+                    content, padding, borders, and margins. The box model is used to calculate the size and position of an element's content and its surrounding elements, such as padding,
+                    borders, and margins. The dimensions of the boxes are used to calculate how much space an element takes up on the page, as well as how other elements are positioned in
+                    relation to it. Therefore, users should understand the box model for correctly styling and positioning elements in a web page.
+                </p>
+
+                <h2 class="contentHeader">9. Web Gradients</h2>
+                <p>
+                    Web gradients is the use of gradient color effects in web design. A gradient is a gradual transition from one color to another. In web design, gradients can be
+                    applied to elements such as background, buttons, and text to create a more visually appealing design. Web gradients can be created using CSS, and there are several types
+                    of gradient effects, including linear, radial, and conic gradients. The use of web gradients helps to create a smooth, blended look and can add depth and dimension to a
+                    design. Web gradients can also be used to create a unique visual identity for a website or application.
+                </p>
+            </section>
+
+            <!-- Week 3 -->
+            <section id="section3">
+                <h1 class="mainHeader" id="week3">Week 3</h1>
+            </section>
+
+            <!-- Week 4 -->
+            <section id="section4">
+                <h1 class="mainHeader" id="week4">Week 4</h1>
+            </section>
+
+            <!-- Week 5 -->
+            <section id="section5">
+                <h1 class="mainHeader" id="week5">Week 5</h1>
+            </section>
+
+            <!-- Week 6 -->
+            <section id="section6">
+                <h1 class="mainHeader" id="week6">Week 6</h1>
+            </section>
+
+            <!-- Week 7 -->
+            <section id="section7">
+                <h1 class="mainHeader" id="week7">Week 7</h1>
+            </section>
+
+            <!-- Week 8 -->
+            <section id="section8">
+                <h1 class="mainHeader" id="week8">Week 8</h1>
+            </section>
+
+            <!-- Week 9 -->
+            <section id="section9">
+                <h1 class="mainHeader" id="week9">Week 9</h1>
+            </section>
+
+            <!-- Week 10 -->
+            <section id="section10">
+                <h1 class="mainHeader" id="week10">Week 10</h1>
+            </section>
         </div>
 
         <script src="js/script.js"></script>
