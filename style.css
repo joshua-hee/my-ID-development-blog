@@ -18,7 +18,7 @@ body {
     color: white;
 }
 
-/* tinted background */
+/* Tinted background */
 .banner img {
 	filter: brightness(50%);
 	height: 450px;
@@ -40,6 +40,16 @@ body {
 }
 
 /* ---------- Navigation Section ---------- */
+#overviewSection {
+	box-shadow: 10px 10px 0px #000;
+	border: 2px solid black;
+	border-radius: 25px;
+	border-color: gray;
+	padding: 50px;
+	margin: 50px 100px;
+	font-size: 20px;
+}
+
 .dropdown {
 	text-align: center;
 }
@@ -49,7 +59,6 @@ body {
 	font-size: 30px;
 	border: none;
 	outline: none;
-	padding: 14px 16px;
 	background-color: inherit;
 	font-family: inherit; /* Important for vertical align on mobile phones */
 	margin: 0; /* Important for vertical align on mobile phones */
@@ -71,7 +80,6 @@ body {
 	width: 100%;
   	padding: 50px 0;
   	text-align: center;
-  	background-color: lightblue;
   	margin-top: 20px;
 	animation-fill-mode: both;
 }
@@ -87,29 +95,50 @@ body {
 }
 
 /* ---------- Introduction Section ---------- */
-.introSection {
+#introSection {
+	box-shadow: 10px 10px 0px #000;
+	border: 2px solid black;
+	border-radius: 25px;
+	border-color: gray;
+	padding: 50px;
+	margin: 50px 100px;
+	font-size: 20px;
+}
+
+.introduction {
 	text-align: center;
 	margin: 50px 100px;
 }
 
-.introHeader {
-	text-decoration: underline;
+/* ---------- Content Section ---------- */
+.mainContent {
+    margin: 50px 100px;
+}
+
+.mainHeader {
+	text-align: center;
 }
 
 .contentHeader {
     text-decoration: underline;
 }
 
-.mainContent {
-    margin: 50px 100px;
-}
-
 table, th, td {
 	border: 2px solid black;
 	width: 100%;
-  }
+}
 
 td {
 	text-align: center;
 	padding: 10px 20px;
+}
+
+#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10 {
+	box-shadow: 10px 10px 0px #000;
+	border: 2px solid black;
+	border-radius: 25px;
+	border-color: gray;
+	padding: 50px;
+	font-size: 20px;
+	margin-top: 50px;
 }
