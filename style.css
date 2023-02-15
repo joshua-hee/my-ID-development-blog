@@ -142,3 +142,13 @@ td {
 	font-size: 20px;
 	margin-top: 50px;
 }
+
+.reference-img {
+	text-align: center;
+}
+
+.references {
+	text-align: center;
+	font-size: 15px;
+	color: gray;
+}
