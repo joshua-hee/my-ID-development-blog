@@ -269,6 +269,283 @@
             <!-- Week 3 -->
             <section id="section3">
                 <h1 class="mainHeader" id="week3">Week 3</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>The Form Tag</li>
+                    <li>The Input Tag</li>
+                    <li>The Label Tag</li>
+                    <li>The "required" Attribute</li>
+                    <li>Nested Elements and the DOM</li>
+                    <li>Descendant Selector</li>
+                    <li>Grouping Selectors</li>
+                    <li>Inheritance</li>
+                    <li>Specificity</li>
+                    <li>Cascade</li>
+                    <li>Importance using "!important"</li>
+                    <li>Background</li>
+                    <li>Border</li>
+                    <li>ID Selector</li>
+                    <li>Class Selector</li>
+                    <li>Media Queries</li>
+                    <li>Positioning</li>
+                    <li>Flexbox</li>
+                    <li>Wireframes</li>
+                    <li>Grid System</li>
+                </ol>
+
+                <h2 class="contentHeader">1. The Form Tag</h2>
+                <p>
+                    The form tag is an HTML tag used to create a form for collecting information from a user. It is an element used for creating interactive web pages where users can
+                    enter and submit information. This tag contains various form elements such as text input, radio buttons, checkboxes, and drop-down menus, and it allows users to
+                    enter data and submit it to a server for processing.
+                </p>
+                <p>
+                    The form tag has many different attributes, such as action, method, and even enctype. The action attribute specifies the URL of the script or server-side program that will handle
+                    the form data when it is submitted. The method attribute specifies the HTTP method used to submit the form, which is usually either GET or POST.
+                </p>
+                <p>
+                    Using the form tag, web developers can create interactive web pages that allow users to submit data and interact with web applications.
+                </p>
+                
+                <h2 class="contentHeader">2. The Input Tag</h2>
+                <p>
+                    Now to delve in deeper into some of the capabilities of the input tag.
+                </p>
+                <p>
+                    The input tag is an HTML element used to create a variety of form controls, such as text boxes, checkboxes, radio buttons, submit buttons,
+                    and more. The input element is a self-closing tag that can be used without a closing tag.
+                </p>
+                    The type attribute of the input tag determines the type of input control to create. Some common values for the type attribute are:
+                </p>
+                <p>
+                    text: Creates a single-line text input field.
+                    password: Creates a single-line text input field where the characters are hidden.
+                    checkbox: Creates a checkbox control.
+                    radio: Creates a radio button control.
+                    submit: Creates a submit button for the form.
+                    button: Creates a generic button that can be used for a variety of purposes.
+                    file: Creates a file upload control.
+                    number: Creates a numeric input field.
+                    date: Creates a date input field.
+                    email: Creates an email input field.
+                    url: Creates a URL input field.
+                </p>
+                <p>
+                    There are many other values for the type attribute, depending on the specific type of input control the user want to create. Additionally,
+                    users can use other attributes like name, value, placeholder, required, and more to customize the behavior and appearance of the input element.
+                </p>
+
+                <h2 class="contentHeader">3. The Label Tag</h2>
+                <p>
+                    The HTML <label> element is used to associate a text label with a form element, such as an input field, select box, or text area. This helps to
+                    make the form more accessible, understandable and user-friendly by allowing users to click on the label to activate the form element.
+                </p>
+                <p>The label tag has two main purposes:</p>
+                <p>1. To provide a text label for an associated form element</p>
+                <p>2. To improve the accessibility and usability of a form by making it easier for users to interact with form elements</p>
+                <p>To associate a label with an input element, the "for" attribute is used. The "for" attribute value should be set to the "id" attribute value of the input element.</p>
+
+                <h2 class="contentHeader">4. The "required" Attribute</h2>
+                <p>
+                    Used for validations, the "required" attribute is an HTML attribute that can be added to a form element to indicate that the field is required and must be filled out
+                    before submitting the form.
+                </p>
+                <p>
+                    When this attribute is added to an input element, the browser will prevent the form from being submitted if the field is empty. It will also display an error message
+                    asking the user to fill out the required field.
+                </p>
+
+                <h2 class="contentHeader">5. Nested Elements and the DOM</h2>
+                <p>
+                    Nested elements are HTML elements that are placed inside other HTML elements, forming a hierarchical structure. For example, a paragraph element (p) can contain
+                    text and other elements, such as links (a), images (img), and span elements (span).
+                </p>
+                <p>
+                    The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style,
+                    and content. The DOM represents the document as a tree structure where each node is an object representing a part of the document, such as an element, attribute, or piece of text.
+                </p>
+                <p>
+                    In the DOM, each element in the HTML document is represented by a node. The parent node of an element is the element that contains it, and the child nodes of an element are the
+                    elements contained within it. This nesting of elements allows us to create complex web pages with a hierarchical structure, where elements can be styled and manipulated individually or as a group.
+                </p>
+
+                <h2 class="contentHeader">6. Descendant Selector</h2>
+                <p>
+                    Descendant selectors in CSS allow users to select an element that is a descendant of another element. It is also called a child selector. It selects all elements that are inside a
+                    specific element, regardless of how many levels deep the selected elements are.
+                </p>
+                <p>
+                    The descendant selector uses whitespace to separate the parent element and the child element. For example, div p selects all p elements that are descendants of div elements.
+                </p>
+                <p>
+                    Descendant selectors are useful when applying a style to a specific element that is nested within another element. They allow users to target specific elements without using complex
+                    class names or IDs. Despite being allowed to go as many levels the user want with descendent selectors, it is recommended to use at most 3 levels.
+                </p>
+
+                <h2 class="contentHeader">7. Grouping Selectors</h2>
+                <p>
+                    Users can apply the same set of styles to multiple selectors by grouping them together. To group selectors, just simply separate each selector with a comma (,).
+                </p>
+                <p>
+                    Grouping selectors can be useful for simplifying CSS code and making it more concise. It can also help to make styles more modular and reusable, as users can apply the same set of
+                    styles to multiple elements throughout the HTML document.
+                </p>
+
+                <h2 class="contentHeader">8. Inheritance</h2>
+                <p>
+                    Inheritance is a key concept in CSS that allows properties of a parent element to be passed down to its child elements. When a property is not explicitly set on a child element, the
+                    browser looks up the hierarchy of the DOM to find a parent element that has that property set. If found, it will use that value as the default value for the child element.
+                </p>
+                <p>
+                    This makes it much easier to style large sections of a website without having to repeat the same styles over and over again. For example, if a person has a website with multiple pages that
+                    all use the same font and font size, you can set the font and font size on the body element and it will be inherited by all child elements.
+                </p>
+                <p>
+                    However, not all CSS properties are inherited. Some properties, like background-color and border, are not inherited by default.
+                </p>
+
+                <h2 class="contentHeader">9. Specificity</h2>
+                <p>Specificity is a way of determining which CSS rule gets applied to an element when more than one rule could potentially apply. It is a measure of the specificity of the selectors used in the rule.</p>
+                <p>
+                    Specificity is based on a combination of the number of ID, class, and element selectors used in the selector, with ID selectors having the highest specificity, followed by class selectors and then
+                    element selectors. The more specific a selector is, the more weight it carries when determining which rule applies to an element.
+                </p>
+
+                <h2 class="contentHeader">10. Cascade</h2>
+                <p>
+                    In CSS, the cascade refers to the way that styles are applied to an HTML document, based on specificity. The cascade is a set of rules that determine which styles will be applied to an element.
+                    The cascade is based on three factors: specificity, source order, and importance.
+                </p>
+                <p>
+                    Specificity refers to how specific a style is to a particular element or set of elements. For example, a style rule that applies to a specific class (e.g. .my-class) has a higher specificity than
+                    a rule that applies to all elements of a certain type (e.g. p).
+                </p>
+
+                <h2 class="contentHeader">11. Importance using "!important"</h2>
+                <p>
+                    "!important" is a CSS declaration that can be added to a property to give it more importance or specificity than other declarations that might apply to the same element. When a property is marked
+                    with "!important", it overrides other declarations that might apply to the same element, regardless of their specificity or order in the stylesheet.
+                </p>
+                <p>
+                    It is usually best to use "!important" sparingly, as it can make CSS harder to maintain and override in the future. Generally, it is better to use specific selectors or better organization of the
+                    CSS to achieve the desired styling. However, there may be certain cases where "!important" is necessary, such as when overriding styles from third-party libraries or plugins. 
+                </p>
+
+                <h2 class="contentHeader">12. Background</h2>
+                <p>
+                    The background property in CSS is used to set the background color and image of an HTML element. It is a shorthand property that combines several other background-related properties like "background-color",
+                    "background-image", "background-size", "background-repeat", as well as a few others.
+                </p>
+                <p>The "background-color" property is used to set the background color of an element. It can take a color value in various formats, including named colors, RGB, RGBA, HSL, and HEX codes.</p>
+                <p>The "background-image" property is used to set the background image of an element. It can take an image URL, either relative or absolute.</p>
+                <p>The "background-size" property is used to control the size of the background image. It can take values like cover, contain, a specific width and height in pixels, or percentages.</p>
+                <p>The "background-repeat" property is used to set how the background image should be repeated. It can take values like repeat, repeat-x, repeat-y, and no-repeat.</p>
+
+                <h2 class="contentHeader">13. Border</h2>
+                <p>
+                    In CSS, the border property is used to set the border style, width, and color for an element. It is a shorthand property that combines the several properties.
+                </p>
+                <p>
+                    The border property can have up to three values: "border-width", "border-style", and "border-color". Users can also set each of these values separately.
+                </p>
+                <p>
+                    Users can also set different values for each side of the border using the "border-top", "border-right", "border-bottom", and "border-left" properties.
+                </p>
+
+                <h2 class="contentHeader">14. ID Selector</h2>
+                <p>
+                    An ID selector is a type of CSS selector that selects elements based on their ID attribute. The ID attribute is used to uniquely identify an element within an HTML document, and it must
+                    be unique within the document. The ID selector is written with the pound sign (#) followed by the ID name.
+                </p>
+                <p>
+                    ID selectors have a high specificity, which means that they have a higher priority than other types of selectors. This is because the ID attribute is unique, so there can only be one element
+                    with a particular ID. When multiple selectors apply to the same element, the selector with the highest specificity takes precedence.
+                </p>
+
+                <h2 class="contentHeader">15. Class Selector</h2>
+                <p>
+                    A class selector is a type of CSS selector that is used to target elements based on their class attribute. The class attribute is used to group elements that share similar characteristics,
+                    so that they can be targeted with CSS rules.
+                </p>
+
+                <h2 class="contentHeader">16. Media Queries</h2>
+                <p>
+                    Media queries are used to apply different styles based on the characteristics of the device or browser that the website is being viewed on. Users can create responsive designs that adapt to
+                    different screen sizes and devices, making sure that the design and layout of the website looks great no matter how it's being viewed.
+                </p>
+                <p>
+                    Media queries are a useful tool for creating responsive designs that work across a wide range of devices and screen sizes. By using media queries, users can make sure that their website looks
+                    great no matter how it's being viewed, from desktops and laptops to tablets and smartphones.
+                </p>
+
+                <h2 class="contentHeader">17. Positioning</h2>
+                <p>
+                    Positioning in CSS refers to the way elements are placed and aligned on a web page. There are different types of positioning in CSS, including static, relative, absolute, and fixed.
+                </p>
+                <p>Static positioning: The default positioning for all HTML elements, where the element is positioned according to the normal flow of the document.</p>
+                <p>Relative positioning: Allows an element to be positioned relative to its normal position, which means the element can be moved from its original position by specifying a top, bottom, left, or right value.</p>
+                <p>Absolute positioning: Allows an element to be positioned relative to its nearest positioned ancestor element. If no ancestor element is positioned, it will be positioned relative to the document body.</p>
+                <p>Fixed positioning: This is similar to absolute positioning, except the element is positioned relative to the browser window instead of the document.</p>
+                <p>
+                    Z-index: is a property that allows users to control the stacking order of positioned elements on a web page along the z-axis, which is the axis that runs perpendicular to the screen. By default, elements are
+                    layered on top of each other based on the order in which they appear in the HTML document, with the last element appearing on top of all the others. However, with z-index, you can move elements up or down in
+                    the stacking order, allowing you to control which elements appear on top of others.
+                </p>
+                <div class="reference-img">
+                    <img src="img/reference_img_ID_blog.PNG" alt="Types of positioning in CSS">
+                </div>
+                <p class="references">Source: https://interetingishard.com/html-and-css/advanced-positioning/</p>
+
+                <h2 class="contentHeader">18. Flexbox</h2>
+                <p>
+                    Flexbox is a layout model in CSS which allows you to align and distribute elements along a single row or column. It provides an easy way to create responsive layouts by adjusting the position, size, and order
+                    of elements within a container, without the need for complex positioning techniques.
+                </p>
+                <p>
+                    Flexbox is based on the concept of flex containers and flex items. A flex container is an element that contains one or more flex items, and is defined using the "display: flex" or "display: inline-flex" property.
+                    The flex items inside the container can be arranged in different ways, using various properties such as "flex-direction", "flex-wrap", "justify-content", and "align-items".
+                </p>
+
+                <h2 class="contentHeader">19. Wireframes</h2>
+                <p>
+                    Wireframes are a visual representation of the basic layout and structure of a website or application. They are used to plan and organize the content and functionality of a website or application, as well as to
+                    illustrate the relationships between different components and the overall flow of information.
+                </p>
+                <p>
+                    Wireframes are usually created during the early stages of the design process, before more detailed visual designs are developed. They can be simple sketches or more detailed diagrams, depending on the needs of
+                    the project. Wireframes can be created using a variety of tools, including pen and paper, whiteboards, or specialized software.
+                </p>
+                <p>
+                    There are mainly 2 types of fidelity for wireframes. It refers to the level of detail and interactivity included in the design. The types of fidelity are:
+                </p>
+                <p>
+                    Low-fidelity wireframes: These are simple, black-and-white designs that provide a rough idea of the layout, content, and functionality of the website or app. They are quick and easy to create, and they allow designers
+                    to focus on the basic structure and flow of the design. However, low-fidelity wireframes may not provide enough detail for stakeholders to fully understand the design.
+                </p>
+                <p>
+                    High-fidelity wireframes: These wireframes are more detailed and interactive than the other two types. They include color, typography, and more advanced functionality, such as dropdown menus, search bars, and hover
+                    effects. High-fidelity wireframes are more time-consuming to create, but they provide a more accurate representation of the final design, making it easier for stakeholders to visualize the end product.
+                </p>
+                <p>
+                    The pros and cons of each type of fidelity are as follows:
+                </p>
+                <p>Low-fidelity wireframes (Pros): Quick and easy to create, allow designers to focus on the structure and flow of the design.</p>
+                <p>Low-fidelity wireframes (Cons): May not provide enough detail for stakeholders to fully understand the design.</p>
+                <p>High-fidelity wireframes (Pros): Provide a more accurate representation of the final design, making it easier for stakeholders to visualize the end product.</p>
+                <p>High-fidelity wireframe (Cons): More time-consuming to create, may be too detailed for early stages of the design process, can be too constraining for certain types of designs.</p>
+                <p>
+                    The purpose of wireframes is to provide a clear and organized structure for the website or application, and to help designers and developers identify and resolve potential issues before the project moves into
+                    the more detailed design and development phases. By creating a wireframe, designers can quickly and easily test and refine different layouts and designs, and ensure that the final product is functional,
+                    user-friendly, and meets the needs of the project stakeholders.
+                </p>
+
+                <h2 class="contentHeader">20. Grid System</h2>
+                <p>Grid Systems are a layout structure that is used to arrange content on a web page. It is a system of rows and columns that helps to create a balance between the design and content of the page.</p>
+                <p>
+                    In this system, a web page is divided into a series of equal-sized columns. The number of columns can vary depending on the design requirements, but most grid systems use 12 columns as a standard. The columns
+                    are then arranged in rows, which can also be of different heights depending on the content.
+                </p>
+                <p>There are two main types of grid systems: fixed and fluid. A fixed grid system has a set width for the columns, while a fluid grid system uses a percentage width for the columns.</p>
             </section>
 
             <!-- Week 4 -->
