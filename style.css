@@ -147,6 +147,11 @@ td {
 	text-align: center;
 }
 
+.reference-img img {
+	width: 100%;
+	height: auto;
+}
+
 .references {
 	text-align: center;
 	font-size: 15px;
