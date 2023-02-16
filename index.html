@@ -529,10 +529,10 @@
                 <p>
                     The pros and cons of each type of fidelity are as follows:
                 </p>
-                <p>Low-fidelity wireframes (Pros): Quick and easy to create, allow designers to focus on the structure and flow of the design.</p>
-                <p>Low-fidelity wireframes (Cons): May not provide enough detail for stakeholders to fully understand the design.</p>
-                <p>High-fidelity wireframes (Pros): Provide a more accurate representation of the final design, making it easier for stakeholders to visualize the end product.</p>
-                <p>High-fidelity wireframe (Cons): More time-consuming to create, may be too detailed for early stages of the design process, can be too constraining for certain types of designs.</p>
+                <p>1. Low-fidelity wireframes (Pros): Quick and easy to create, allow designers to focus on the structure and flow of the design.</p>
+                <p>2. Low-fidelity wireframes (Cons): May not provide enough detail for stakeholders to fully understand the design.</p>
+                <p>3. High-fidelity wireframes (Pros): Provide a more accurate representation of the final design, making it easier for stakeholders to visualize the end product.</p>
+                <p>4. High-fidelity wireframe (Cons): More time-consuming to create, may be too detailed for early stages of the design process, can be too constraining for certain types of designs.</p>
                 <p>
                     The purpose of wireframes is to provide a clear and organized structure for the website or application, and to help designers and developers identify and resolve potential issues before the project moves into
                     the more detailed design and development phases. By creating a wireframe, designers can quickly and easily test and refine different layouts and designs, and ensure that the final product is functional,
@@ -551,16 +551,319 @@
             <!-- Week 4 -->
             <section id="section4">
                 <h1 class="mainHeader" id="week4">Week 4</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>Responsive Images</li>
+                    <li>Git</li>
+                    <li>Important Git Commands</li>
+                </ol>
+
+                <h2 class="contentHeader">1. Responsive Images</h2>
+                <p>
+                    Responsive images are images that are optimized to adapt to different screen sizes and device types, such as desktop computers, laptops, tablets, and smartphones. The goal of responsive images is to ensure
+                    that images are displayed in the best possible quality and resolution on any device, without compromising on performance or download speeds.
+                </p>
+                <p>
+                    Some of the methods that can be used to make images responsive are:
+                </p>
+                <p>1. Using CSS media queries to apply different styles or sizes to the image depending on the device size.</p>
+                <p>2. Using the HTML srcset attribute to specify a range of image sizes and resolutions to choose from.</p>
+                <p>3. Using the HTML sizes attribute to specify the available sizes for the image.</p>
+                <p>4. Using JavaScript to dynamically load the correct image size based on the device and screen size.</p>
+                <p>
+                    The use of responsive images can help improve the user experience on your website by ensuring that images are displayed in the optimal quality for each user, regardless of their device or screen size.
+                    This can lead to increased engagement, higher conversion rates, and better overall user satisfaction.
+                </p>
+
+                <h2 class="contentHeader">2. Git</h2>
+                <p>
+                    Git is a distributed version control system used for tracking changes in files and coordinating work among multiple people. It is designed to handle everything from small to very large projects with speed and efficiency.
+                </p>
+                <p>Git allows multiple people to work on the same project at the same time without interfering with each other's changes. It provides a way to keep track of all changes made to a project and provides a way to easily roll back to previous versions if necessary.</p>
+                <p>One of the key features of Git is its ability to create branches. A branch is a separate copy of a project that can be worked on independently of the main project. This allows developers to experiment with new features without affecting the main project.</p>
+                <p>Git is often used in conjunction with GitHub, a web-based hosting service for version control. GitHub provides a central location for storing Git repositories and allows developers to collaborate on code and manage issues and pull requests.</p>
+
+                <h2 class="contentHeader">3. Important Git Commands</h2>
+                <p>Some of the important Git commands I have learnt this week are:</p>
+                <p>1. git clone: Creates a copy of a remote repository on your local machine.</p>
+                <p>2. git init: Initializes a new Git repository in the current directory.</p>
+                <p>3. git add: Adds changes to the staging area, which prepares them for committing.</p>
+                <p>4. git status: Shows the status of the current branch.</p>
+                <p>5. git commit: Commits the changes to the local repository.</p>
+                <p>6. git log: Shows a log of all commits in the current branch.</p>
+                <p>7. git mv: Used to rename or move files in the Git repository.</p>
+                <p>8. git rm: Used to remove a file or directory from the Git repository.</p>
+                <p>9. git push: Pushes the local commits to a remote repository.</p>
+                <p>10. git pull: Pulls changes from a remote repository to the local repository.</p>
+                <p></p>
             </section>
 
             <!-- Week 5 -->
             <section id="section5">
                 <h1 class="mainHeader" id="week5">Week 5</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>JavaScript Essential Training</li>
+                    <li>Ways to place JavaScripts files</li>
+                    <li>The async and defer keyword</li>
+                    <li>JavaScript Modules</li>
+                    <li>All About Objects</li>
+                    <li>String Ouput</li>
+                </ol>
+
+                <h2 class="contentHeader">1. JavaScript Essential Training</h2>
+                <p>
+                    Week 5 is a whitespace week. We were given the time to do some self-learning on a few topics on JavaScript basics. I learnt about objects, srting outputs
+                    and DOM (Document Object Model). 
+                </p>
+
+                <h2 class="contentHeader">2. Ways to place JavaScript files</h2>
+                <p>
+                    1. Inline: Users can add JavaScript code directly in the HTML document by using the script tag with the type attribute set to "text/javascript". The JavaScript
+                    code will be executed when the page is loaded, or when an event triggers it.
+                </p>
+                <p>2. Internal: You can also add JavaScript code within the script tags in the head or body section of the HTML document. This is called internal JavaScript.</p>
+                <p>
+                    3. External: You can include JavaScript code from an external file using the script tag with the src attribute set to the URL of the file. This is called external
+                    JavaScript and is a good practice as it allows you to separate the HTML and JavaScript code, making the code more modular and easier to maintain.
+                </p>
+                <p>
+                    4. Event Handlers: JavaScript can also be placed within HTML elements as event handlers, using attributes such as onclick, onload, onsubmit, etc. These event
+                    handlers will execute the JavaScript code when the associated event occurs.
+                </p>
+                <p>I learnt that The recommended way to include JavaScript in a web page is by placing the script tags at the end of the body element, just before the closing "body" tag.</p>
+                <p>Some of the reasons for this approach are:</p>
+                <p>
+                    1. Performance: If the script is placed in the head element or at the beginning of the body element, the browser will block the rendering of the rest of the page until
+                    the script has finished loading and executing. By placing the script at the end of the body element, the page can load and render without being blocked by the script.
+                </p>
+                <p>
+                    2. Maintainability: By placing the script at the end of the body element, it's easier to locate and manage the script as it's separate from the content and layout of the page.
+                </p>
+                <p>
+                    3. Compatibility: Some older browsers don't support the async and defer attributes for script tags, so placing the script at the end of the body element is a more widely compatible approach.
+                </p>
+
+                <h2 class="contentHeader">3. The async and defer keyword</h2>
+                <p>In HTML, the async and defer keywords are used with the script tag to specify how the script should be executed.</p>
+                <p>
+                    The "async" keyword tells the browser to start downloading the script in the background, and continue parsing the HTML document without waiting for the script to finish loading.
+                    Once the script is downloaded, it is executed immediately, which means that the order in which the scripts are downloaded may not be the order in which they are executed.
+                    This can result in unexpected behavior if scripts have dependencies on each other.
+                </p>
+                <div class="reference-img">
+                    <img src="img/ID_reference3.PNG" alt="Types of positioning in CSS">
+                </div>
+                <p class="references">Source: https://www.linkedin.com/learning/javascript-essential-training</p>
+
+                <p>
+                    The "defer" keyword tells the browser to download the script in the background, and continue parsing the HTML document without waiting for the script to finish loading. However, the script
+                    is not executed until the HTML document has finished parsing. This means that scripts are executed in the order in which they appear in the HTML document, and scripts that have dependencies
+                    on other scripts will be executed in the correct order.
+                </p>
+                <div class="reference-img">
+                    <img src="img/ID_reference4.PNG" alt="Types of positioning in CSS">
+                </div>
+                <p class="references">Source: https://www.linkedin.com/learning/javascript-essential-training</p>
+
+                <p>
+                    The recommended way to use these keywords is to use "defer" whenever possible, because it ensures that scripts are executed in the correct order, without blocking the rendering of the page.
+                    If users need to use async, they should test their page thoroughly to ensure that scripts are executing in the correct order and not causing unexpected behavior.
+                </p>
+
+                <h2 class="contentHeader">4. JavaScript Modules</h2>
+                <p>
+                    JavaScript modules are a way of organizing code in a modular and reusable way, allowing developers to break their code into small, self-contained units that can be easily imported and used
+                    in other parts of their application.
+                </p>
+                <p>
+                    The import and export statements are used to work with ES6 modules. ES6 modules are recommended for modern web development due to their simplicity and ease of use. They also have built-in
+                    support for asynchronous loading, which can improve the performance of large applications.
+                </p>
+
+                <h2 class="contentHeader">5. All About Objects</h2>
+                <p>
+                    In JavaScript, an object is a container that can hold properties and methods. Objects can be created using object literals, constructor functions, or ES6 classes. Object literals are a
+                    shorthand way to create objects using curly braces {}.
+                </p>
+                <p>An object is a collection of properties, where each property is a key-value pair. A property key is always a string (or a Symbol), and the value can be any valid JavaScript value, including another object.</p>
+                <p>
+                    An object method is a function that is a property of an object. An object method can be called on that object to perform a specific action or to compute and return a value. Object methods can also take arguments,
+                    just like regular functions.
+                </p>
+                <p>
+                    Object blueprints, also known as constructor functions or classes, are templates for creating objects that share similar properties and methods. They allow users to create objects with the same structure and functionality
+                    without having to write the same code over and over again.
+                </p>
+                <p>
+                    Users can create object blueprints using constructor functions or the newer class syntax. Constructor functions are regular functions that are used with the "new" keyword to create objects, while classes provide a more
+                    structured and familiar syntax for creating object blueprints. By using object blueprints like constructor functions or classes, we can create multiple objects with the same structure and behavior, which makes codes more organized and easier to maintain.
+                </p>
+                <p>Object constructors are functions that are used to create and initialize objects. They allow you to create many objects of the same type, and to set their initial values using arguments passed to the constructor.</p>
+                <p>Using object constructors allows users to create and manage multiple objects of the same type more easily, and to reuse code by defining common properties and methods in the constructor.</p>
+
+                <p>In JavaScript, global objects are objects that are always available in the global scope, meaning they can be accessed from anywhere in the code. These objects provide useful functionality and are often used in many JavaScript programs. These are some of the most commonly used global objects:</p>
+                <p>Math: The Math object provides mathematical constants and functions, such as trigonometric and logarithmic functions.</p>
+                <p>Date: The Date object provides methods to create and manipulate dates and times.</p>
+                <p>String: The String object provides methods for working with strings.</p>
+                <p>Array: The Array object provides methods for working with arrays.</p>
+                <p>JSON: The JSON object provides methods for working with JSON data, such as parsing JSON strings into JavaScript objects and vice versa.</p>
+                <p>console: The console object provides methods for logging messages to the browser console.</p>
+                <p>These global objects can be accessed from anywhere in the code without the need to import or require them. However, it is important to use them wisely and not to overwrite them with custom variables or functions that could cause conflicts.</p>
+
+                <h2 class="contentHeader">6. String Output</h2>
+                <p>Template literals, also known as template strings, are a feature in JavaScript that allows for easier string interpolation and multiline strings.</p>
+                <p>
+                    Template literals are enclosed by backticks () instead of single or double quotes, and placeholders in the form of ${expression}` can be used to embed variables or expressions within the string. The placeholders are replaced by the values of the expressions at runtime.
+                    They provide a more concise and readable way to work with strings and are widely used in modern JavaScript development.
+                </p>
+                <p>There are also traditional string outputs, which refers to the practice of concatenating multiple strings using the + operator to form a larger string.</p>
+                <p>This approach can quickly become cumbersome when dealing with multiple variables and complex strings. It can also introduce the possibility of syntax errors when using quotation marks within the string.</p>
+                <p>This is why traditional string outputs are no longer the preffered of doing things, and template literals would be the preffered method as it offers a more concise and readable way of constructing strings, especially when including variables and expressions.</p>
+                <p>Overall, template literals provide a more powerful and flexible way to work with strings in JavaScript.</p>
             </section>
 
             <!-- Week 6 -->
             <section id="section6">
                 <h1 class="mainHeader" id="week6">Week 6</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>JS Basics Recap</li>
+                    <li>Variables</li>
+                    <li>Statements</li>
+                    <li>Data Types</li>
+                    <li>Dynamic Typing</li>
+                    <li>String Processing</li>
+                    <li>Comparison and Logical Operators</li>
+                    <li>Casting</li>
+                    <li>For Loops</li>
+                    <li>While Loops</li>
+                    <li>Array Indexing</li>
+                    <li>2D Arrays</li>
+                    <li>Associative Arrays</li>
+                    <li>Functions</li>
+                </ol>
+
+                <h2 class="contentHeader">1. JS Basics Recap</h2>
+                <p>The lessons in week 6 are mostly a recap of week 5. We look through again variables, statements, data types, logical operators, objects, DOM and so on.</p>
+
+                <h2 class="contentHeader">2. Variables</h2>
+                <p>
+                    In JavaScript, a variable is a named container that stores a value. You can assign a value to a variable and then refer to the variable to use its value in your code. 
+                    There are three ways to declare a variable by using the "var", "let", or "const" keyword.
+                </p>
+                <p>
+                    From what I have learnt, it is recommended to use "let" and "const" instead of var as they provide better scoping and help prevent common mistakes like redeclaring variables.
+                    "let" is used for variables that may change their value, while "const" is used for variables that should not be reassigned. A thing I noted was that variables should be given
+                    meaningful names and the camel case naming convention was recommended. Each variable should also have a unique name.
+                </p>
+                
+                <h2 class="contentHeader">3. Statements</h2>
+                <p>
+                    Each statement in JavaScript must end with a semicolon (;) to indicate the end of the statement. However, in some cases, the semicolon can be omitted, and JavaScript will automatically insert it.
+                    This is known as Automatic Semicolon Insertion (ASI), but it is generally recommended to always include the semicolon to avoid any ambiguity in the code.
+                </p>
+
+                <h2 class="contentHeader">4. Data Types</h2>
+                <p>In JavaScript, there are several data types that are used to represent different kinds of values. Some of the most commonly used data types are:</p>
+                <p>1. Number: Represents numeric values, including integers and floating-point numbers.</p>
+                <p>2. String: Represents text values. Strings are enclosed in single or double quotes.</p>
+                <p>3. Boolean: Represents true/false values.</p>
+                <p>4. Null: Represents a null or empty value.</p>
+                <p>5. Undefined: Represents a variable that has not been assigned a value.</p>
+                <p>6. Object: Represents complex data structures that can contain multiple properties.</p>
+                <p>7. Array: A specialized type of object used to store a collection of values.</p>
+                <p>8. Function: Represents a block of reusable code that can be called from other parts of a program.</p>
+
+                <p>Not to mention, there are also 5 primitive data types which I learnt from this week:</p>
+                <p>1. Number: represents a numeric value, either integer or floating-point.</p>
+                <p>2. String: represents a sequence of characters.</p>
+                <p>3. Boolean: represents a logical value, either true or false.</p>
+                <p>4. Undefined: represents a variable that has been declared but has not been assigned a </p>
+                <p>5. Null: represents a null value or no value.</p>
+                <p>
+                    These data types are considered primitive because they are not objects and do not have methods or properties. However, JavaScript treats them as objects
+                    when necessary by automatically converting them to their corresponding object wrapper types (Boolean, Number, and String).
+                </p>
+
+                <h2 class="contentHeader">5. Dynamic Typing</h2>
+                <p>
+                    Dynamic typing is a feature of programming languages where the type of a variable is determined at runtime, rather than being explicitly declared by the programmer. In dynamically typed languages like JavaScript,
+                    the type of a variable can change at any point during the execution of a program.
+                </p>
+                <p>
+                    This flexibility can make coding faster and easier, as it allows developers to write code more quickly without having to worry about type declarations or conversions. However, it can also introduce bugs and errors
+                    if the programmer is not careful, as unexpected type changes can lead to unexpected behavior in the code.
+                </p>
+
+                <h2 class="contentHeader">6. String Processing</h2>
+                <p>
+                    String processing is an important aspect of JavaScript programming, as it allows developers to work with text data in various ways. JavaScript provides a number of built-in methods and functions that can be used
+                    to process and manipulate strings. Some of the most common tasks that can be performed on strings in JavaScript include:
+                </p>
+                <p>1. Concatenation: To concatenate, or join, two or more strings together, you can use the "+" operator</p>
+                <p>2. Accessing characters: You can access individual characters within a string using bracket notation. The index of the first character in a string is 0, and the index of the last character is the length of the string -1.</p>
+                <p>3. Finding the length of a string: You can use the "length" property of a string to find out how many characters it contains.</p>
+                <p>4. Searching for a substring: You can search for a specific substring within a string using the "indexOf()" method. This method returns the index of the first occurrence of the substring, or -1 if the substring is not found.</p>
+                <p>5. Extracting a substring: You can extract a specific substring from a string using the "slice()" method. This method takes two arguments: the starting index and the ending index of the substring.</p>
+                <p>6. Converting to uppercase or lowercase: You can convert a string to uppercase or lowercase using the "toUpperCase()" and "toLowerCase()" methods.</p>
+
+                <h2 class="contentHeader">7. Comparison and Logical Operators</h2>
+                <p>Comparison and logical operators are used in JavaScript to compare values and evaluate conditions. They are used in conditional statements, loops, and other control structures to control the flow of code based on whether certain conditions are true or false.</p>
+                <p>Here are some common comparison operators in JavaScript:</p>
+                <p>1. == : equal to</p>
+                <p>2. != : not equal to</p>
+                <p>3. &gt; : greater than</p>
+                <p>4. &lt;: less than</p>
+                <p>5. &gt;= : greater than or equal to</p>
+                <p>6. &lt;= : less than or equal to</p>
+                <p>7. === : strictly equal to</p>
+                <p>8. !== : strictly not equal to</p>
+                <p>The difference between == and === is that the latter performs a strict comparison, which means it compares not only the values but also the data type. For example, 1 == "1" is true, but 1 === "1" is false.</p>
+
+                <p>Logical operators, on the other hand, are used to combine conditions and evaluate multiple conditions at once. The most common logical operators in JavaScript are:</p>
+                <p>1. && : and</p>
+                <p>2. || : or</p>
+                <p>3. ! : not</p>
+                <p>The && operator returns true if both conditions it is evaluating are true. The || operator returns true if at least one of the conditions it is evaluating is true. The "!" operator negates a condition, so if a condition is true, "!" makes it false, and if a condition is false, "! makes it true.</p>
+                
+                <h2 class="contentHeader">8. Casting</h2>
+                <p>In JavaScript, casting is the process of converting one data type to another. This is necessary when you want to perform an operation that requires operands of a specific data type.</p>
+                <p>For example, if a user has a string that represents a number, and you want to perform a mathematical operation with that number, you need to convert the string to a number first. This can be done using the Number() function or the parseInt() function.</p>
+                <p>Casting can also be done implicitly in some cases. For example, if the user concatenates a string and a number using the + operator, the number will be automatically converted to a string.</p>
+                
+                <h2 class="contentHeader">9. For Loops</h2>
+                <p>A for loop is a JavaScript loop statement that repeatedly runs a block of code as long as the specified condition is true. A for loop consists of three parts: initialization, condition, and increment/decrement.</p>
+
+                <h2 class="contentHeader">10. While Loops</h2>
+                <p>A while loop is a control flow statement in JavaScript that executes a block of code while a specified condition is true.</p>
+                <p>The condition is evaluated at the beginning of each iteration of the loop. If the condition is true, the code block inside the loop is executed. This process continues until the condition becomes false, at which point control is passed to the statement following the loop.</p>
+
+                <h2 class="contentHeader">11. Array Indexing</h2>
+                <p>Array indexing refers to the process of accessing and manipulating elements of an array using their respective indices. The indices of an array are zero-based, which means that the first element of an array has an index of 0, the second element has an index of 1, and so on.</p>
+                <p>To access an element of an array using its index, the user can use the square bracket notation with the index inside the brackets</p>
+                <p>Arrays in JavaScript have several built-in methods and properties. Some of the most commonly used ones include:</p>
+                <p>1. pop(): Removes the last element from the array and returns that element.</p>
+                <p>2. push(): Adds one or more elements to the end of the array and returns the new length.</p>
+                <p>3. shift(): Removes the first element from the array and returns that element. This also changes the length of the array.</p>
+                <p>4. unshift(): Adds one or more elements to the beginning of the array and returns the new length.</p>
+                <p>5. splice(): Adds or removes elements from an array.</p>
+                <p>6. sort():  Sorts the elements of an array in place and returns the sorted array. It sorts the elements based on the Unicode character values of their string representations.</p>
+                <p>7. indexOf(): Returns the index of the first occurrence of a specified value in the array.</p>
+                <p>8. length: returns the number of elements in the array.</p>
+
+                <h2 class="contentHeader">12. 2D Arrays</h2>
+                <p>A 2D array is an array of arrays. Each element of a 2D array is an array itself. In other words, a 2D array is an array where each element is also an array.</p>
+
+                <h2 class="contentHeader">13. Associative Arrays</h2>
+                <p>Normal arrays use integers as the index.</p>
+                <p>Associative arrays use strings as the index. The index is often known as the key</p>
+
+                <h2 class="contentHeader">14. Functions</h2>
+                <p>
+                    Functions are one of the fundamental building blocks in JavaScript. A function is a block of code that can be executed at a later time, and it can take in inputs (known as parameters)
+                    and return a value as output. Functions allow you to break your code down into smaller, more manageable pieces, and reuse that code in different parts of your program.
+                </p>
             </section>
 
             <!-- Week 7 -->
