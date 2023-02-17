@@ -742,6 +742,7 @@
                     <li>2D Arrays</li>
                     <li>Associative Arrays</li>
                     <li>Functions</li>
+                    <li>Literal Objects vs Function-Based Objects</li>
                 </ol>
 
                 <h2 class="contentHeader">1. JS Basics Recap</h2>
@@ -864,11 +865,112 @@
                     Functions are one of the fundamental building blocks in JavaScript. A function is a block of code that can be executed at a later time, and it can take in inputs (known as parameters)
                     and return a value as output. Functions allow you to break your code down into smaller, more manageable pieces, and reuse that code in different parts of your program.
                 </p>
+
+                <h2 class="contentHeader">15. Literal Objects vs Function-Based Objects</h2>
+                <p>
+                    There are two ways to create objects in JavaScript, which is using the literal notation and a constructor function. Literal notation creates an object by enclosing key-value pairs in curly
+                    braces, whereas constructor functions create objects using a function that acts as a blueprint for creating new objects.
+                </p>
+                <p>Literal notation is simpler and more concise, while constructor functions offer more flexibility and can be used to create multiple similar objects.</p>
+                <p>To sum up, literal notation is useful for creating simple objects or prototypes, while constructor functions are more useful for creating complex objects that require customization or multiple instances.</p>
+                <p>Literal objects:</p>
+                <p>1. Has no constructors</p>
+                <p>2. Cannot be inherited</p>    
+                <p>3. Best used for "one off" objects where only one copy will exist</p>    
+                <p>4. A colon seperates the key-value pair</p>
+                
+                <p>Function-based objects</p>
+                <p>1. Has a constructor</p>
+                <p>2. Can be inherited</p>
+                <p>3. Best used for stuff that users want to instantiate continuously</p>
+                <p>4. The "this" keyword is used instead of the object name</p>
+                <p>5. If there are several objects with similar functionality</p>
+
+                <h2 class="contentHeader">16. For Loops</h2>
+                <p>A for loop is a type of loop statement that is used to execute a block of code multiple times.</p>
+                <p>It has three parts. They are initialization expression, a condition, and an increment/decrement expression.</p>
+                <p>
+                    The loop starts with the initialization expression, then checks the condition, and if the condition is true, it executes the loop body. After the loop body executes, the increment / decrement expression is evaluated,
+                    and the loop goes back to checking the condition again. The loop continues to execute until the condition becomes false.
+                </p>
             </section>
 
             <!-- Week 7 -->
             <section id="section7">
                 <h1 class="mainHeader" id="week7">Week 7</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>Events</li>
+                    <li>Event Listeners</li>
+                    <li>Event Object</li>
+                    <li>Event Bubbling</li>
+                    <li>Forms and Validation</li>
+                </ol>
+
+                <h2 class="contentHeader">1. Events</h2>
+                <p>
+                    Events are user or browser-generated actions that can be detected and responded to using JavaScript. An event can be triggered by various user actions such as clicking a button,
+                    moving the mouse, pressing a key on the keyboard, scrolling, and resizing the browser window.
+                </p>
+                <p>To respond to an event, users can attach an event listener to an element in the DOM (Document Object Model) using JavaScript. The event listener is a function that gets executed whenever the specified event occurs on the element.</p>
+                <p>There are several types of events that can be handled using JavaScript, including:</p>
+                <p>1. Mouse Events - Events triggered by the user interacting with the mouse, such as clicking, double-clicking, hovering, dragging, and scrolling.</p>
+                <p>2. Keyboard Events - Events triggered by the user interacting with the keyboard, such as pressing a key, releasing a key, or typing.</p>
+                <p>3. Touch Events - Events triggered by the user interacting with a touch screen device, such as tapping, swiping, pinching, or zooming.</p>
+                <p>4. Focus Events - Events triggered when an element gains or loses focus, such as when the user clicks on an input field.</p>
+                <p>5. Form Events - Events triggered when the user submits a form or interacts with form elements.</p>
+                <p>6. Window Events - Events triggered when the browser window is resized, loaded, or closed.</p>
+                <p>7. Media Events - Events triggered when media elements such as videos, audio files, or images are loaded, played, or paused.</p>
+                <p>
+                    JavaScript also provides various methods and properties to handle events, such as preventDefault() and stopPropagation() to prevent the default behavior of an event or to stop it from propagating further. Or, users can also use event
+                    delegation to handle events on dynamically created or multiple elements using a single event listener attached to a parent element.
+                </p>
+
+                <h2 class="contentHeader">2. Event Listeners</h2>
+                <p>Event listeners are a way to register functions to be called when a specific event occurs on a particular HTML element. They are a fundamental part of event-driven programming in JavaScript, allowing you to react to user interactions and other types of events.</p>
+                <p>To add an event listener to an element, add the addEventListener() method to the code. This method takes 3 arguments: the event name (as a string), a function that should be called when the event occurs, and and an optional boolean value that specifies whether the event should be handled in the capturing or bubbling phase.</p>
+
+                <h2 class="contentHeader">3. Event Object</h2>
+                <p>The event object is a built-in object in JavaScript that represents the event that occurred, such as a mouse click or keypress. When an event is triggered, the event object is automatically created and passed as an argument to the event handler function.</p>
+                <p>The event object contains a lot of useful information about the event that occurred, such as the target element, the type of event, the location of the mouse, and any keys that were pressed. This information can be accessed using properties and methods of the event object.</p>
+
+                <h2 class="contentHeader">4. Event Bubbling</h2>
+                <p>
+                    Event bubbling is a mechanism in which events that are triggered on an element are propagated up the DOM tree. When an event is triggered on a particular element, it will first execute any event handlers attached to that element.
+                    After the event has been handled at that level, the event will "bubble up" to the parent element and execute any event handlers attached to it. This process will continue until the event reaches the root element of the document (i.e., the html element).
+                </p>
+                <p>An example of how this is applied to a button element inside a div element and when the user clicks the button is that the event will first be handled by any event handlers attached to the button element. After that, the event will "bubble up" to the div element and execute any event handlers attached to it.</p>
+                <p>
+                    Event bubbling can be useful for creating event handlers that apply to multiple elements in a document. By attaching the event handler to a parent element, users can handle events on all of its child elements, without having to attach the event handler to each individual child element.
+                </p>
+
+                <h2 class="contentHeader">5. Forms and Validation</h2>
+                <p>Forms and validation are essential features of web applications, allowing users to input data and providing mechanisms for ensuring that the data is correct and complete. JavaScript provides a number of methods and properties for working with forms and validating data.</p>
+                <p>Forms and validation are important parts of creating interactive and user-friendly web applications. By using JavaScript to validate input and provide feedback to users, people can ensure that your forms are reliable and user-friendly.</p>
+
+                <p>Client-side validation and server-side validation are both important in ensuring that data is accurate and consistent. Here are some differences between the two:</p>
+                <p>1. Occurs in the user's browser.</p>
+                <p>2. Generally faster, since it doesn't require a round trip to the server.</p>
+                <p>3. Can provide immediate feedback to the user if there's an issue with the input.</p>
+                <p>4. Less secure, since it can be bypassed by a determined attacker</p>
+                <p>5. Should be used to provide a better user experience and reduce server load, but not relied on exclusively for data validation</p>
+
+                <p>Server-side validation:</p>
+                <p>1. Occurs on the server, after the user submits the form.</p>
+                <p>2. More secure, since the validation logic can't be bypassed by the user.</p>
+                <p>3. Can take longer to provide feedback to the user, since it requires a round trip to the server.</p>
+                <p>4. Should always be used in addition to client-side validation to ensure that data is validated properly and consistently</p>
+                <p>5. Can be more complex to implement, since it requires server-side code to handle the validation logic.</p>
+
+                <p>
+                    Server-side validation is important because client-side validation can easily be bypassed by malicious users. When user inputs are sent to the server, server-side validation checks whether the submitted data is valid and safe to process.
+                    By validating on the server, users can ensure that only valid and safe data is being processed, reducing the risk of data corruption, security breaches, or other issues.
+                </p>
+
+                <p>Validating on the client side has several advantages:</p>
+                <p>Instant feedback to the user: By validating on the client side, the user gets instant feedback on whether they have filled in the form correctly, without having to wait for the server response. This provides a better user experience.</p>
+                <p>Reduced server load: If validation is done on the client side, it reduces the number of requests made to the server, thereby reducing server load.</p>
+                <p>Enhanced security: Client-side validation helps to prevent malicious attacks, such as SQL injection and cross-site scripting (XSS), by validating input before it is sent to the server. This can help protect the server and the data it holds.</p>
             </section>
 
             <!-- Week 8 -->
