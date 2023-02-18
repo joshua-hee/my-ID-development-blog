@@ -976,11 +976,186 @@
             <!-- Week 8 -->
             <section id="section8">
                 <h1 class="mainHeader" id="week8">Week 8</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>Scripts</li>
+                    <li>jQuery</li>
+                    <li>Getters and Setters</li>
+                    <li>Loading JS when page is ready</li>
+                    <li>DOM Traversal</li>
+                    <li>Data Attributes</li>
+                    <li>Chaining</li>
+                    <li>Event Object</li>
+                    <li>This Keyword</li>
+                    <li>Effects</li>
+                </ol>
+
+                <h2 class="contentHeader">1. Scripts</h2>
+                <p>Just a little background story of the script tag. Developers back then, were told to place the script tags in the head of the page. However, this made pages seemed slower to load</p>
+                <p>Web pages may use files from several different locations (CDN, fonts from third parties, etc.)</p>
+                <p>When a browser starts to download a JavaScript file, it stops all downloads and pauses to lay the page until the script has completed loading.</p>
+                <p>Therefore, placing the script at the end of the page before the closing body tag will be ideal, as it will not affect the rendering of the page.</p>
+
+                <h2 class="contentHeader">2. jQuery</h2>
+                <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes it easier to interact with the Document Object Model (DOM), handle events, create animations, and perform other common tasks in web development.</p>
+                <p>Some of the key features of jQuery include:</p>
+                <p>DOM manipulation: jQuery provides a simple and easy-to-use API for traversing and manipulating the DOM. You can easily select and modify elements, add and remove classes, change styles, and more.</p>
+                <p>Event handling: jQuery makes it easy to handle events like clicks, mouseovers, and keypresses. You can attach event handlers to elements and trigger events programmatically.</p>
+                <p>AJAX: jQuery provides a set of functions for making Ajax requests to servers. You can load data from a server without reloading the page, and easily handle the response.</p>
+                <p>Animations: jQuery makes it easy to create animations and add effects to your web pages. You can animate element properties like width, height, opacity, and more, and chain animations together.</p>
+                <p>Plugins: jQuery has a large and active community that has created thousands of plugins that extend its functionality. You can find plugins for everything from sliders and carousels to advanced data visualizations.</p>
+                <p>Overall, jQuery is a powerful and versatile tool that can make your web development work faster, easier, and more enjoyable.</p>
+                
+                <p>In jQuery, you can select elements from the HTML document using a variety of selectors.</p>
+                <p>Some examples include:</p>
+                <p>Tag name selector: $('tagname') - selects all elements with the specified tag name.</p>
+                <p>Class selector: $('.classname') - selects all elements with the specified class.</p>
+                <p>ID selector: $('#idname') - selects the element with the specified ID.</p>
+                <p>Attribute selector: $('tagname[attribute="value"]') - selects all elements with the specified attribute and value.</p>
+                <p>Descendant selector: $('parent-tagname descendant-tagname') - selects all descendant elements of the specified parent element.</p>
+                <p>Child selector: $('parent-tagname > child-tagname') - selects all direct child elements of the specified parent element.</p>
+                <p>Multiple selector: $('selector1, selector2, selector3') - selects all elements that match any of the specified selectors.</p>
+
+                <h2 class="contentHeader">3. Getters and Setters</h2>
+                <p>In jQuery, there are two main functions used for getting and setting CSS properties of elements: .css() and .attr().</p>
+                <p>The .css() function is used to get or set the CSS properties of an element. It can take two parameters: the first is the name of the CSS property, and the second (optional) parameter is the new value for the property.</p>
+                <p>The .attr() function is used to get or set the attributes of an element. It can take two parameters: the first is the name of the attribute, and the second (optional) parameter is the new value for the attribute.</p>
+
+                <h2 class="contentHeader">4. Loading JS when page is ready</h2>
+                <p>To ensure that the JavaScript code is executed only after the page is fully loaded, users can use the jQuery "$(document).ready()" method, which waits for the DOM to be fully loaded before executing the JavaScript code.</p>
+
+                <h2 class="contentHeader">5. DOM Traversal</h2>
+                <p>DOM Traversal refers to the process of navigating and selecting elements in the Document Object Model (DOM) tree structure. It allows you to find, access, and manipulate elements in the HTML document using JavaScript.</p>
+                <p>There are many methods for traversing the DOM, including:</p>
+                <p>Parent and Child Navigation: Users can navigate through parent and child elements using methods like parentNode, firstChild, lastChild, nextSibling, and previousSibling.</p>
+                <p>Descendant Navigation: Users can traverse the DOM to access descendants of a given element using methods like querySelectorAll and getElementsByTagName.</p>
+                <p>Traversing the DOM by Element Type: Users can traverse the DOM to find elements based on their tag name using getElementsByTagName or by their class name using getElementsByClassName.</p>
+                <p>Finding Elements Based on CSS Selectors: Users can use querySelector and querySelectorAll to find elements in the DOM based on CSS selectors.</p>
+                <p>Tree Walking: Users can traverse the DOM using createTreeWalker or createNodeIterator to iterate over all the nodes in the DOM tree.</p>
+
+                <p>Here are some of the methods available for DOM traversal:</p>
+                <p>1. parentNode: returns the parent node of an element</p>
+                <p>2. childNodes: returns a collection of child nodes of an element</p>
+                <p>3. querySelector: returns the first element that matches a specified CSS selector</p>
+                <p>4. querySelectorAll: returns all elements that match a specified CSS selector</p>
+                <p>5. nextSibling: returns the next sibling node of an element</p>
+                <p>6. previousSibling: returns the previous sibling node of an element</p>
+                <p>7. firstChild: returns the first child node of an element</p>
+                <p>8. lastChild: returns the last child node of an element</p>
+                <p>9. children: returns a collection of child elements of an element (excluding text nodes and comments)</p>
+                <p>10. getElementsByTagName: returns a collection of elements with the specified tag name</p>
+                <p>11. getElementById: returns the element with the specified ID attribute</p>
+                <p>12. remove(): used to remove the selected elements and its child elements from the DOM tree</p>
+                <p>13. clone(): creates a deep copy of the selected element. Not only the selected element but also its child elements and their attributes are copied</p>
+                <p>14. hasClass(): checks if a selected element has a specific class. It returns a boolean value inidicating whether the element has the specified class or not</p>
+
+                <h2 class="contentHeader">6. Data Attribute</h2>
+                <p>
+                    The "data" attributes rovide a way to store custom data private to the page or application. These attributes are used to embed custom data into HTML elements. It allows users to store
+                    extra information on any HTML element without using any non-standard attributes.
+                </p>
+
+                <h2 class="contentHeader">7. Chaining</h2>
+                <p>
+                    Chaining is a technique used in programming where multiple methods or functions are called on an object in a single statement. Instead of writing separate statements to execute each method,
+                    chaining allows them to be strung together for brevity and improved readability.
+                </p>
+                <p>
+                    Chaining can help to make code more readable and easier to understand, as it allows users to express a series of related operations in a single line of code. It can also help to reduce the amount of code to write,
+                    which can make programs more efficient and easier to maintain.
+                </p>
+
+                <h2 class="contentHeader">8. Event Object</h2>
+                <p>The Event object contains information about the event that occurred, such as the type of event, the target element that triggered the event, and any data associated with the event. Event handlers can access this information and use it to perform actions in response to the event.</p>
+                <p>Some commonly used properties of the Event object include:</p>
+                <p>type: the type of event that occurred (e.g., "click", "load", "submit")</p>
+                <p>target: the DOM element that triggered the event</p>
+                <p>currentTarget: the DOM element that the event handler is attached to</p>
+                <p>preventDefault(): a method that can be called to prevent the default behavior of the event from occurring (e.g., preventing a form from submitting)</p>
+
+                <h2 class="contentHeader">9. This Keyword</h2>
+                <p>The "this" keyword efers to the current object or context in which the code is being executed. It is a special variable that is used inside a function and can have different values depending on how the function is called.</p>
+
+                <h2 class="contentHeader">10. Effects</h2>
+                <p>Effects are animations and transitions applied to HTML elements to create dynamic and interactive web pages. Effects can be applied to different elements on a web page, such as images, text, and buttons, to make them more visually appealing and engaging for users.</p>
+                <p>jQuery provides several built-in methods to create different types of effects</p>
+                <p>Effects can be triggered by different events, such as mouse clicks, hover events, or page load events, and can be customized using various options, such as speed, duration, and easing functions.</p>
+                <p>Some of the methods for creating effects are:</p>
+                <p>show(): This method displays an element that was previously hidden.</p>
+                <p>hide(): This method hides an element.</p>
+                <p>toggle(): This method toggles an element between hidden and visible.</p>
+                <p>fadeIn(): This method gradually shows an element, fading it in.</p>
+                <p>fadeOut(): This method gradually hides an element, fading it out.</p>
+                <p>fadeToggle(): This method toggles an element between faded out and faded in.</p>
+                <p>slideUp(): This method hides an element by sliding it up to the top.</p>
+                <p>slideDown(): This method shows an element by sliding it down from the top.</p>
+                <p>slideToggle(): This method toggles an element between slid down and slid up.</p>
+                <p>stop(): This method is used to stops an animation or effect before it has completed its cycle. Can be used to stop animations and effects that are currently running on an element.</p>
+                <p>delay(): This method delays the execution of the next function in the queue for the selected elements.</p>
+                <p>animate(): This method allows you to create custom animations by changing CSS properties over a specified duration.</p>
             </section>
 
             <!-- Week 9 -->
             <section id="section9">
                 <h1 class="mainHeader" id="week9">Week 9</h1>
+                <h2 class="contentHeader">Contents</h2>
+                <ol>
+                    <li>Bootstrap</li>
+                    <li>Bootstrap Grid System</li>
+                    <li>Typography</li>
+                    <li>Images</li>
+                    <li>Components</li>
+                </ol>
+
+                <h2 class="contentHeader">1. Bootstrap</h2>
+                <p>Week 9 was the week where this module introduced to us on an interesting CSS framework, where users can use to beautify websites in a more efficient way!</p>
+                <p>
+                    Starting off with a brief introdution about Bootstrap. Bootstrap is an open-source front-end web framework that is used to design and develop responsive and mobile-first web applications.
+                    It provides a set of pre-designed HTML, CSS and JavaScript componenets that can be easily customized and used in web applications. These components include navigation bars, forms, buttons,
+                    dropdowns, alerts, modals, and many more. Bootstrap also comes with a responsive grid system that enables developers to create responsive layout for web applications that can be viewed on
+                    different devices and screen sizes.
+                </p>
+                <p>
+                    Bootstrap saves a lot of time and effort for developers by providing pre-designed components and styles. It is highly customizable and can be extended with third-party plugins and tools.
+                    Bootstrap has become a popular choice for web development due to its ease of use, flexibility, and widespread community support.
+                </p>
+
+                <h2 class="contentHeader">2. Bootstrap Grid System</h2>
+                <p>
+                    Bootstrap grid is a powerful layout system that is used to create a responsive and mobile-first web design. The grid system is based on a 12-column layout, with each column having a fixed width and gutters between them.
+                    The width of each column is determined by the screen size, allowing for the layout to adapt to different screen sizes and resolutions.
+                </p>
+                <p>There are built-in grid classes that define the layout of the page. The most commonly used classes are:</p>
+                <p>1. ".container": creates a fixed-width container for the content and centers it on the page.</p>
+                <p>2. ".container-fluid": creates a full-width container that spans the entire width of the viewport.</p>
+                <p>3. ".row": creates a horizontal row to contain the columns.</p>
+                <p>4. ".col-*": defines the width of the column based on the screen size.</p>
+                <p>The "*" symbol can be replaced with 5 categories of the different screen size. The syntax are "xs", "sm", "md", "lg", "xl".</p>
+                <p>For example, if the user inputs col-sm-4, it means that column size will be applied to small devices and take up 4 columns.</p>
+                <p>If no size is stated, it will automatically fill in the column size.</p>
+
+                <h2 class="contentHeader">3. Typography</h2>
+                <p>Some of the Bootstrap typography classes include:</p>
+                <p>1. "h1", "h2", "h3", "h4", "h5", and "h6": These classes are used to style different levels of headings, with h1 being the largest and most important, and "h6" being the smallest and least important.</p>
+                <p>2. "text-*": These classes are used to control the color, alignment, and other properties of text. For example, "text-muted" makes text appear lighter and less prominent, while "text-center" centers the text.</p>
+                <p>3. "list-group-*": These classes are used to style list items, with "list-group" providing a basic style and "list-group-item-*" adding additional styling, such as colors, borders, and hover effects.</p>
+
+                <h2 class="contentHeader">4. Images</h2>
+                <p>Bootstrap provides a number of classes to work with images. Here are some of the most common classes and their usage:</p>
+                <p>1. ".img-fluid": This class is used to make the image responsive. It will automatically adjust the size of the image to fit the width of its container.</p>
+                <p>2. ".img-thumbnail": This class is used to add a border and padding to the image.</p>
+
+                <h2 class="contentHeader">5. Components</h2>
+                <p>Now, a little more information about Bootstrap components. Bootstrap provides a set of UI components to help developers create responsive and mobile-friendly websites quickly and easily. These components are pre-designed UI elements that can be easily added to a web page using HTML and CSS classes.</p>
+                <p>Some of the popular components provided by Bootstrap include:</p>
+                <p>1. Navbar: A navigation bar that can be customized and styled to fit the look and feel of the website.</p>
+                <p>2. Cards: A flexible and extensible content container that can be used to display different types of content such as text, images, and links.</p>
+                <p>3. Buttons: A set of pre-designed buttons that can be customized with different styles and colors.</p>
+                <p>4. Forms: A set of form controls such as input fields, checkboxes, radio buttons, and dropdowns that can be easily styled and customized.</p>
+                <p>5. Modals: A popup window that can be used to display additional content or user interactions on the same page.</p>
+                <p>6. Carousels: A slideshow component that can be used to display multiple images or other types of content in a visually appealing way.</p>
+                <p>7. Accordion: A collapsible content container that can be used to display multiple sections of content in a compact way.</p>
+                <p>8. Alerts: A set of pre-designed alert messages that can be used to display warnings, errors, or success messages to users.</p>
             </section>
 
             <!-- Week 10 -->
