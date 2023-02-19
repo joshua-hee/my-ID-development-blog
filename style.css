@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -160,4 +164,46 @@ td {
 	text-align: center;
 	font-size: 15px;
 	color: gray;
+}
+
+#floatBtn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#floatBtn:hover {
+	background-color: lightgrey;
+}
+
+@media only screen and (max-width: 767px) {
+	.heading {
+		height: auto;
+		width: auto;
+	}
+
+	.banner img {
+			width: 100%;
+			height: auto;
+	}
+
+    .bannerContent {
+		font-size: 30px;
+	}
+
+	.introduction {
+		margin: auto;
+	}
+
+	.contentHeader {
+		text-align: center;
+	}
+
+	#section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #section13 {
+		text-align: center;
+	}
 }
